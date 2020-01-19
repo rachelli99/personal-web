@@ -1,0 +1,262 @@
+:root {
+	--primary: #C4DFE6; 
+	--secondary: #6A5ACD;
+	--ternary: 	#008000	;
+	--white: #FFFFFF;
+	--black: #000000;
+	--font1: Arial;
+	--font2: cursive;
+}
+
+* {
+	margin: 0;
+}
+
+body {
+	background: var(--primary);
+}
+
+canvas {
+  width: 100em;
+  height: 15em;
+  background-repeat: repeat-x;
+  max-height: 100%;
+  max-width: 100%;
+
+}
+
+.title{
+	text-align: center;
+	color: #003B46;
+	font-family: var(--font1), sans-serif;
+	font-size: 2em;
+	padding-top: 2em;
+}
+
+.photo{
+	width: auto;
+	max-width: 300px;
+	height: auto;
+	border-radius: 3em;
+	position: relative;
+	border-style: solid;
+  	border-width: thick;
+  	border-color: #003B46;
+}
+
+.photo_nohover{
+	width: auto;
+	max-width: 300px;
+	height: auto;
+	border-radius: 3em;
+	position: relative;
+	border-style: solid;
+  	border-width: thick;
+  	border-color: #003B46;
+}
+
+.photo:hover {
+	border-color: white;
+	cursor: pointer;
+}
+
+.photo_plain{
+	width: auto;
+	max-width: 300px;
+	height: auto;
+	position: relative;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.icon{
+	display: flex;
+	width: auto;
+	max-width: 60px;
+	max-height: 50px;
+	height: auto;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+
+.paragraph{
+	width: auto;
+	max-width: 650px;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.regular{
+	align-items: center;
+	display: flex;
+	justify-content: space-around;
+	font-family: var(--font1), sans-serif;
+	margin: 50px 0;
+}
+.regular_nomargin{
+	align-items: center;
+	display: flex;
+	justify-content: space-around;
+	font-family: var(--font1), sans-serif;
+}
+
+.navbarItem{
+	color: #003B46;
+	font-family: var(--font1), sans-serif;
+	font-size: medium;
+	border: 0.08em var(--dark) solid;
+	letter-spacing: 0.3em;
+}
+
+.navbarItem:hover{
+	color: white;
+	font-family: var(--font1), sans-serif;
+	font-size: medium;
+	border: 0.08em var(--dark) solid;
+	letter-spacing: 0.3em;
+}
+
+.resume_photo{
+	width: auto;
+	max-width: 200px;
+	height: auto;
+	border-radius: 2em;
+	border-style: solid;
+  	border-width: thick;
+  	border-color: #003B46;
+}
+
+.resume_photo:hover{
+	border-color: white;
+}
+
+.noline{
+	text-decoration: none;
+}
+
+.subtitle{
+	font-weight: bold;
+	font-size: 1.2em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+.bordering{
+	border-style: solid;
+  	border-width: thick;
+  	border-color: #003B46;
+  	padding-right: 2em;
+  	border-radius: 2em;
+  	padding-bottom: 0.5em;
+  	padding-top: 0.5em;
+  	background-color: #F5FFFA;
+}
+
+.container{
+	background-repeat: repeat-x;
+	background-size: cover;
+}
+
+.padding_less{
+	padding-top: 0.1em;
+	padding-bottom: 0.1em;
+}
+
+.padding_more{
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+}
+
+#navbar{
+	background: #66A5AD;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	z-index: 1000;
+	height: 3em;
+	border-bottom: solid;
+	border-color: #003B46;
+	border-width: thick;
+	display: flex;
+	align-items: center;
+/*	background:url(https://i.gifer.com/J59.gif);*/
+}
+
+#navbarContent{
+	display: flex;
+	justify-content: space-around;
+	width: 40%;
+	position: relative;
+	left: 30%;
+	font-weight: bold;
+}
+
+#name{
+	text-align: center;
+	font-size: 4.5em;
+	letter-spacing: 0.5em;
+	font-family: var(--font1), sans-serif;
+	padding-top: 0em;
+	border-top: none;
+	border: none;
+	font-weight: bold;
+}
+
+#nameEng{
+	text-align: center;
+	font-size: 4em;
+	letter-spacing: 0.2em;
+	font-family: var(--font1), sans-serif;
+	color: #003B46;
+	margin-bottom: 50px;
+	padding-top: 0.48em;
+	padding-bottom: 0.35em;
+}
+
+#display_flex{
+	display: flex;
+	justify-content: space-around;
+	padding-left: 40%;
+	padding-right: 40%;
+	padding-bottom: 0.2em;
+}
+
+#profile{
+	width: auto;
+	max-width: 300px;
+	height: auto;
+	border-radius: 6em;
+	position: relative;
+	border-style: solid;
+  	border-width: thick;
+  	border-color: #003B46;
+}
+
+#footer{
+	padding-top: 0.5em;
+	color: #66A5AD;
+}
+
+@keyframes heartbeat {
+	0% {
+		transform: scale(0.75);
+	}
+	25% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(0.75);
+	}
+	75% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(0.75);
+	}
+}
+.animated-heartbeat {
+	animation: heartbeat 2s infinite;
+	height: 3px;
+	width: 3px;
+}
