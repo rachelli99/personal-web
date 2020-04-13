@@ -1,1 +1,1 @@
-中文个人网页（rachelli99.github.io/personal-web/）
+[中文个人网页](rachelli99.github.io/personal-web)
